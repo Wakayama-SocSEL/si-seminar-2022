@@ -8,13 +8,20 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "presentation": {
+                "panel": "new"
             }
         },
         {
             "label": "test",
             "type": "shell",
             "command": "./gradlew test",
-            "group": "test"
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }
