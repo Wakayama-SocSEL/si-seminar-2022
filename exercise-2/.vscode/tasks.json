@@ -4,7 +4,7 @@
         {
             "label": "run",
             "type": "shell",
-            "command": "./gradlew run",
+            "command": "./gradlew -q run",
             "group": {
                 "kind": "build",
                 "isDefault": true
