@@ -16,6 +16,16 @@
         {
             "label": "test",
             "type": "shell",
+            "command": "./gradlew test --tests exercise.AppTest",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "test-ex-1",
+            "type": "shell",
             "command": "./gradlew test",
             "group": "test",
             "presentation": {

@@ -1,5 +1,5 @@
 # 演習1: FizzBuzz
-整数n（n ≧ 1）が入力されます。1からnまでの整数i<sub>1</sub>, i<sub>2</sub>, ... i<sub>j</sub>, ... i<sub>n</sub>を順に出力してください。ただし、i<sub>j</sub>が3の倍数のときは整数を出力する代わりに「Fizz」と出力してください。同様に、i<sub>j</sub>が5の倍数のときは「Buzz」、iが3と5の倍数のときは「FizzBuzz」と出力してください。
+整数n（n ≧ 1）が入力されます。1からnまでの整数i_1, i_2, ... i_j, ... i_nを順に出力してください。ただし、i_jが3の倍数のときは整数を出力する代わりに「Fizz」と出力してください。同様に、i_jが5の倍数のときは「Buzz」、i_jが3と5の倍数のときは「FizzBuzz」と出力してください。
 <br><hr><hr>
 
 #### 📕 入出力形式
@@ -9,7 +9,7 @@ n
 ```
 - 1 ≦ n ≦ 100
 ##### 出力
-- 整数または文字列「Fizz」「Buzz」「FizzBuzz」を半角スペース区切りで出力してください
+- 整数または文字列「Fizz」「Buzz」「FizzBuzz」を1行ずつ出力してください。出力の最後は改行してもしなくても構いません。
 
 <hr><hr>
 
@@ -21,7 +21,11 @@ n
 ```
 - 出力
 ```
-1 2 Fizz 4 Buzz
+1
+2
+Fizz
+4
+Buzz
 ```
 ##### 例2
 - 入力
@@ -30,7 +34,21 @@ n
 ```
 - 出力
 ```
-1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
 ```
 <hr><hr>
 
@@ -42,12 +60,12 @@ n
   - 「<walkthrough-editor-spotlight spotlightId="menu-terminal">Terminal</walkthrough-editor-spotlight>」→「Run Test Task」→「test」→「Never scan the task output」
 <hr><hr>
 
-#### 📗 演習課題
-- 入出力テスト「test」の全項目に合格（PASSED）すること
+#### 📗 課題
+- 入出力テスト「test」の全項目に合格（PASSED）するようなプログラムを実装してください
 <hr><hr>
 
-#### 📚 発展課題
-1. 100文字以内でプログラムを実装してみよう
-    - 入出力テスト「test-ex-1」の全項目に合格（PASSED）すること
-2. スライドなどを参考に、読みやすさや修正しやすさを考えたプログラムに書き直してみよう
+#### 📚 発展課題（課題が早く終わった人向け）
+- 500文字以内でプログラムを実装してみよう
+    - 入出力テスト「test-ex-1」の全項目に合格（PASSED）するようなプログラムを実装してください
+- スライドやウェブサイトを参考にして、読みやすいプログラムに書き直してみましょう
 <hr><br><br>
