@@ -32,6 +32,15 @@
                 "reveal": "always",
                 "panel": "new"
             }
+        },
+        {
+            "label": "repair",
+            "type": "shell",
+            "command": "java -jar ../kGenProg-1.8.2.jar -r ./ -s app/src/main/java/exercise/App.java -t app/src/test/java/exercise/AppTest.java",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }

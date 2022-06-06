@@ -1,14 +1,14 @@
 package exercise;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-class AppExTest {
-    public static String question(String problem) {
+public class AppExTest {
+    public static String execute(String problem) {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
 
         System.setIn(new ByteArrayInputStream(problem.getBytes()));
@@ -19,9 +19,9 @@ class AppExTest {
         return out.toString().replaceAll("\n+$", "");
     }
 
-    @Test void testcase_ex_01() {
+    @Test public void testcase_ex_01() {
         long start = System.currentTimeMillis();
-        question("10000000");
+        execute("10000000");
         long end = System.currentTimeMillis();
         assertTrue(end-start <= 2000);
     }

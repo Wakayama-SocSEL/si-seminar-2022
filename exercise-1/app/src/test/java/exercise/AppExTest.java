@@ -1,12 +1,12 @@
 package exercise;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.nio.file.*;
 
-class AppExTest {
-    @Test void testcase_ex_01() {
+public class AppExTest {
+    @Test public void testcase_ex_01() {
         try{
             Path file = Paths.get("./src/main/java/exercise/App.java");
             String text = Files.readString(file);

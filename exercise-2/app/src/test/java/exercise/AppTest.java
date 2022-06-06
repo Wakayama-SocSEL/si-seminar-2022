@@ -1,14 +1,14 @@
 package exercise;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-class AppTest {
-    public static String question(String problem) {
+public class AppTest {
+    public static String execute(String problem) {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
 
         System.setIn(new ByteArrayInputStream(problem.getBytes()));
@@ -19,21 +19,21 @@ class AppTest {
         return out.toString().replaceAll("\n+$", "");
     }
 
-    @Test void testcase_01() {
+    @Test public void testcase_01() {
         String correct = "4";
-        String answer = question("10");
+        String answer = execute("10");
         assertEquals(correct, answer);
     }
 
-    @Test void testcase_02() {
+    @Test public void testcase_02() {
         String correct = "1";
-        String answer = question("2");
+        String answer = execute("2");
         assertEquals(correct, answer);
     }
 
-    @Test void testcase_03() {
+    @Test public void testcase_03() {
         String correct = "15";
-        String answer = question("50");
+        String answer = execute("50");
         assertEquals(correct, answer);
     }
 }
